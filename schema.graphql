@@ -1,0 +1,16 @@
+type submitVote @entity {
+  id: String!
+  propId: BigInt!
+  address: String!
+  support: Boolean!
+  votingPower: BigInt!
+}
+
+type ProposalCreated @entity {
+  id: BigInt!
+  creator: String!
+}
+
+type propExecuted @entity {
+  id: BigInt!
+}
